@@ -2,12 +2,10 @@
 
 fs = require 'fs'
 transform = require 'coffee-react-transform'
+jsSyntaxTransform = require 'coffee-react-jstransform'
+CoffeeScript = require 'coffeescript/lib/coffeescript/coffeescript'
 
 helpers = require './helpers'
-
-CoffeeScript = require 'coffee-script/lib/coffee-script/coffee-script'
-
-jsSyntaxTransform = require 'coffee-react-jstransform'
 
 unless CoffeeScript._cjsx
 

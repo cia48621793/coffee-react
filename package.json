@@ -8,42 +8,27 @@
     "cjsx",
     "coffee-react"
   ],
-  "author": "James Friend",
-  "version": "5.0.1",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/jsdf/coffee-react/master/LICENSE"
-    }
-  ],
+  "author": ["cia48621793", "James Friend"],
+  "version": "0.0.1",
+  "licenses": "MIT",
   "files": [
     "register.js",
     "bin/",
     "lib/"
   ],
-  "main": "./lib/coffee-react-script",
   "bin": {
     "cjsx": "./bin/cjsx"
   },
   "scripts": {
-    "prepublish": "cake build",
-    "test": "tap test/*.coffee"
-  },
-  "homepage": "https://github.com/jsdf/coffee-react",
-  "bugs": "https://github.com/jsdf/coffee-react/issues",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jsdf/coffee-react.git"
+    "test": "exit 0"
   },
   "dependencies": {
-    "coffee-react-jstransform": "^1.0.0",
-    "coffee-react-transform": "^4.0.0",
-    "coffee-script": "^1.10.0",
-    "mkdirp": "^0.5.0"
+    "coffee-react-jstransform": "cia48621793/coffee-react-jstransform",
+    "coffee-react-transform": "cia48621793/coffee-react-transform",
+    "coffeescript": "next"
   },
   "devDependencies": {
     "concat-stream": "^1.4.5",
-    "react": "^0.13.1",
-    "tap": "^0.7.1"
+    "react": "latest",
   }
 }

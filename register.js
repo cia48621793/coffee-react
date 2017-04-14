@@ -1,1 +1,2 @@
-require('./lib/register');
+require('coffeescript-register')
+require('./src/register')

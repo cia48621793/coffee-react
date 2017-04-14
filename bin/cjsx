@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
+require('coffeescript/register')
+
 var path = require('path');
 var fs   = require('fs');
-var lib  = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+var lib  = path.join(path.dirname(fs.realpathSync(__filename)), '../src');
 
 require(lib + '/command').run();

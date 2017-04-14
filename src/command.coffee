@@ -66,7 +66,7 @@ optionParser = null
 # `--` will be passed verbatim to your script as arguments in `process.argv`
 exports.run = ->
   parseOptions()
-  # Make the REPL *CLI* use the global context so as to (a) be consistent with the 
+  # Make the REPL *CLI* use the global context so as to (a) be consistent with the
   # `node` REPL CLI and, therefore, (b) make packages that modify native prototypes
   # (such as 'colors' and 'sugar') work as expected.
   replCliOpts = useGlobal: yes
@@ -423,4 +423,3 @@ version = ->
   printLine "coffee-react version #{version}"
   printLine "coffee-react-transform version #{cjsxversion}"
   printLine "coffee-script version #{CoffeeScript.VERSION}"
-
